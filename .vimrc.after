@@ -1,0 +1,28 @@
+" color jellybeans+
+" color seoul256
+set guifont=Meslo\ LG\ M\ for\ Powerline:h16
+
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$|node_modules|components|log',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ }
+
+" let g:indentLine_faster = 1
+
+nnoremap <F9> :Dispatch 
+
+set t_Co=256
+
+" whenever
+set backupskip=/tmp/*,/private/tmp/*
+
+autocmd FileType c,cpp,haml,ruby,ru,javascript,coffee autocmd BufWritePre <buffer> :%s/\s\+$//e
+
+let g:neocomplcache_enable_at_startup = 1
+
+set completefunc=syntaxcomplete#Complete

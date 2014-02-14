@@ -1,0 +1,11 @@
+au BufNewFile,BufRead *.em set filetype=coffee
+
+let g:airline_powerline_fonts = 1
+
+au FileType rust setl sw=4 sts=4 et
+
+call janus#disable_plugin('easymotion')"
+call janus#disable_plugin('NrrwRgn')"
+call janus#disable_plugin('ZoomWin')"
+call janus#disable_plugin('fugitive')"
+call janus#disable_plugin('vroom')"
